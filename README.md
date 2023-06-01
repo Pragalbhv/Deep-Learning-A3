@@ -3,7 +3,7 @@
 
 python 3.7+ Keras
 
-In addition, install the following packages (or go pip install -r requirements.txt):
+In addition, install the following packages:
 
     numpy
     tqdm
