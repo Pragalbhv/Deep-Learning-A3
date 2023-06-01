@@ -1,5 +1,6 @@
 # Deep-Learning-A3
-###Dependencies
+### By Pragalbh Vashishtha
+### Dependencies
 
 python 3.7+ Keras
 
@@ -19,7 +20,7 @@ contains
 - `encode` is a function that returns an encoder function based on the specified encoding mode (one-hot or simple).
 - The `encode_word` function takes a word, a mapping of alphabets to indices, and an encoder function (defaulting to `encode()`) and returns the encoded representation of the word. The word is padded with dots (`.`) to a maximum length of 30, and each letter in the word is encoded using the provided encoder function and alphabet-to-index mapping. The encoded representation of the word is returned as a list.
 - The `get_alphabet_from_encode` function takes a one-hot encoded vector or index, a mapping of indices to alphabets, and a flag indicating whether the encoding is one-hot or simple. If the encoding is one-hot, the function finds the index of the element with value 1 in the vector and returns the corresponding alphabet. If the encoding is simple, the function directly returns the alphabet corresponding to the index. If the alphabet is not found in the mapping, a space character is returned.
-- The `word_from_vecs` function takes a sequence of encoded vectors, a mapping of indices to alphabets, and a flag indicating whether the encoding is one-hot or simple. It iterates over the encoded vectors, retrieving the corresponding alphabets using the `get_alphabet_from_encode` function. It constructs a word by appending each alphabet to a list until it encounters the end marker (`>`). The constructed word is returned as a string. If the word is invalid (i.e., does not start with `<`), a special character (`$`) is appended to the beginning of the word.
+- The `word_from_vecs` function takes a sequence of encoded vectors, a mapping of indices to alphabets, and a flag indicating whether the encoding is one-hot or simple. It iterates over the encoded vectors, retrieving the corresponding alphabets using the `get_alphabet_from_encode` function. It constructs a word by appending each alphabet to a list until it encounters the end marker (`>`). The constructed word is returned as a string. If the word is invalid (i.e., does not start with `<`), error is thrown.
 ## Submission_Vanilla.ipynb 
 Click run all to run
 Does not use Attention
